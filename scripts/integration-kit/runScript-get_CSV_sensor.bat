@@ -1,1 +1,1 @@
-powershell -noexit -executionpolicy bypass -File .\getDataFrom-ASTOZI-SMART-INTEGRATION-KIT.ps1
+powershell -executionpolicy bypass -File .\get_CSV_sensor.ps1
