@@ -17,8 +17,8 @@
 
 # ----------========= PARAMETERS =========----------
 $sourceData = @(
-				@{"sourceURL" = "http://192.168.0.50:80"; "sourceFilename" = "LASTDAY.CSV"; "dstFilename" = "192_168_0_50_LASTDAY.CSV" },
-				@{"sourceURL" = "http://192.168.0.51:80"; "sourceFilename" = "LASTDAY.CSV"; "dstFilename" = "192_168_0_51_LASTDAY.CSV" }
+				@{"sourceURL" = "http://192.168.0.50:80"; "sourceFilename" = "LASTDAY.CSV"; "dstFilename" = "192_168_0_50_" + (Get-Date).AddDays(-1).ToString("yyyyMMdd") + ".CSV" },
+				@{"sourceURL" = "http://192.168.0.51:80"; "sourceFilename" = "LASTDAY.CSV"; "dstFilename" = "192_168_0_51_" + (Get-Date).AddDays(-1).ToString("yyyyMMdd") + ".CSV" }
 			)
 $destinationFolder = "c:\temp\"
 
